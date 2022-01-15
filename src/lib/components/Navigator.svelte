@@ -1,12 +1,13 @@
 <script>
   export let heading;
   export let list;
+  export let url;
 </script>
 
 <div class="navigator">
   <th>{heading}</th>
   {#each list as link}
-    <td>{link}</td>
+    <td><a href={url}>{link}</a></td>
   {/each}
 </div>
 <style>
