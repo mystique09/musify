@@ -10,9 +10,9 @@
       </a>
     </div>
     <div class="navigators">
-      <Navigator heading="Company" list={['About', 'Jobs', 'For The Record']} />
-      <Navigator heading="Community" list={['For Artist', 'Developers', 'Advertising', 'Inventors', 'Vendors']} />
-      <Navigator heading="Useful Links" list={['Support', 'Web Player', 'Mobile App']} />
+      <Navigator url="/" heading="Company" list={['About', 'Jobs', 'For The Record']} />
+      <Navigator url="/" heading="Community" list={['For Artist', 'Developers', 'Advertising', 'Inventors', 'Vendors']} />
+      <Navigator url="/" heading="Useful Links" list={['Support', 'Web Player', 'Mobile App']} />
     </div>
     <div class="visit-my-github-and-others">
       <div class="link">
