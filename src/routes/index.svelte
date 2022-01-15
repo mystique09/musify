@@ -1,3 +1,6 @@
+<svelte:head>
+  <title>Musify</title>
+</svelte:head>
 <div class="hero">
     <div class="circle circle-1"></div>
     <div class="header">
