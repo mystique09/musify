@@ -1,9 +1,9 @@
 <div class="container">
-  <slot />
+	<slot />
 </div>
 
 <style>
-  .container {
-    @apply h-screen;
-  }
+	.container {
+		@apply h-screen;
+	}
 </style>
