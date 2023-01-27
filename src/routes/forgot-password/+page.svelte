@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Musify - Forgot Password</title>
+    <meta name="description" content="Musify - Password reset" />
 </svelte:head>
 
 <div class="h-screen">

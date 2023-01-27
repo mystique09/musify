@@ -1,45 +1,28 @@
 <svelte:head>
 	<title>Musify</title>
+	<meta name="description" content="Musify - a Spotify clone made with Sveltekit" />
 </svelte:head>
-<div class="hero">
+
+<div
+	class="flex items-center justify-center flex-col h-screen relative p-8 text-center bg-blue-800 overflow-hidden"
+>
 	<div class="circle circle-1" />
-	<div class="header">
-		<h2>Listening is everything</h2>
+	<div class="mb-4">
+		<h2 class="text-green-400 font-bold text-2xl md:text-6xl">Listening is everything</h2>
 	</div>
-	<div class="para">Millions of songs and podcasts. No credit card needed.</div>
-	<div class="btn-container">
-		<a href="/signup">Get Musify free</a>
+	<p class="text-green-400 text-sm md:text-base tracking-wider">
+		Millions of songs and podcasts. No credit card needed.
+	</p>
+	<div class="mt-6 p-6">
+		<a
+			class="rounded-full bg-green-400 px-10 text-xs md:text-sm md:px-16 py-4 uppercase font-bold text-blue-800 text-none"
+			href="/signup">Get Musify free</a
+		>
 	</div>
 	<div class="circle circle-2" />
 </div>
 
-<style>
-	.hero {
-		@apply flex items-center justify-center flex-col h-screen relative p-8 text-center bg-blue-800 overflow-hidden;
-	}
-
-	.header {
-		@apply mb-4;
-	}
-
-	h2 {
-		@apply font-bold text-4xl;
-	}
-
-	h2,
-	.para {
-		@apply text-green-400;
-	}
-
-	.btn-container {
-		@apply mt-6 p-6;
-	}
-
-	a {
-		@apply rounded-full bg-green-400 px-8 py-4 uppercase text-sm font-bold text-blue-800;
-		text-decoration: none;
-	}
-
+<style lang="postcss">
 	.circle {
 		@apply absolute h-64 w-64 rounded-full bg-green-400;
 	}
