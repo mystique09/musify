@@ -5,19 +5,13 @@
 	export let label;
 </script>
 
-<label for={name}>{label}</label>
-<div class="input-container">
-	<input {placeholder} type="text" {name} {id} />
+<label class="font-light text-sm" for={name}>{label}</label>
+<div class="mb-6">
+	<input
+		class="focus:border-none focus:outline-none duration-150 rounded-sm ring ring-gray-400 hover:ring hover:ring-green-400 text-base py-2 px-2 w-full"
+		{placeholder}
+		type="text"
+		{name}
+		{id}
+	/>
 </div>
-
-<style>
-	.input-container {
-		@apply mb-6;
-	}
-	input {
-		@apply rounded-md outline outline-gray-300 py-4 px-2 w-full;
-	}
-	label {
-		@apply font-bold text-sm;
-	}
-</style>

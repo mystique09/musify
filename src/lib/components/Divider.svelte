@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	.container {
 		@apply relative w-full;
 	}

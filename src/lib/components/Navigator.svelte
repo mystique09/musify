@@ -11,7 +11,7 @@
 	{/each}
 </div>
 
-<style>
+<style lang="postcss">
 	.navigator {
 		@apply flex flex-col py-4;
 	}

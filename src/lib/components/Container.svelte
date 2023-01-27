@@ -2,7 +2,7 @@
 	<slot />
 </div>
 
-<style>
+<style lang="postcss">
 	.container {
 		@apply h-screen;
 	}
