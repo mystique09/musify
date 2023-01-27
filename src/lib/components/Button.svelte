@@ -1,22 +1,23 @@
 <script>
 	export let type;
-	export let callback;
+	export let action;
 	export let size;
 	export let color;
+    export let className = "";
 </script>
 
 {#if type === 'anchor'}
-	<a class={`btn btn__${size} btn_${color}`} href={callback || '/'}>
+	<a class={`btn btn__${size} btn_${color} ${className}`} href={action || '/'}>
 		<slot />
 	</a>
 {/if}
 {#if type !== 'anchor'}
-	<button {type} class={`btn btn__${size} btn_${color}`} on:click|preventDefault={callback}>
+	<button {type} class={`btn btn__${size} btn_${color} ${className}`} on:click|preventDefault={action}>
 		<slot />
 	</button>
 {/if}
 
-<style>
+<style lang="postcss">
 	.btn_primary {
 		@apply bg-black text-white;
 	}
@@ -27,7 +28,7 @@
 		@apply bg-green-600 text-white;
 	}
 	.btn {
-		@apply text-base rounded-full py-3 mb-2 font-semibold w-full text-center;
+		@apply text-base  tracking-wider rounded-full py-3 mb-2 font-semibold w-full text-center;
 	}
 	.btn__sm {
 		@apply px-8 text-sm;
@@ -36,13 +37,13 @@
 		@apply px-10 text-base;
 	}
 	.btn__lg {
-		@apply px-16 text-lg;
+		@apply px-24 py-4 text-sm;
 	}
 	.btn_bordered {
-		@apply bg-white text-gray-400 text-base outline-none ring ring-black rounded-full font-semibold;
+		@apply bg-gray-50 hover:bg-white ring ring-black text-sm;
 	}
 	.btn_transparent {
-		@apply rounded-full text-white font-semibold bg-transparent ring ring-white;
+		@apply rounded-full text-white bg-transparent ring ring-white;
 	}
 	a {
 		text-decoration: none;

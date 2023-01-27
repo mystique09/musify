@@ -2,14 +2,14 @@
 	import Navigator from '$lib/components/Navigator.svelte';
 </script>
 
-<footer>
-	<div class="container">
-		<div class="branding-logo">
-			<a href="/">
-				<h3>Musify</h3>
+<footer class="bg-black">
+	<div class="px-4 py-6 flex flex-col justify-between">
+		<div class="mt-4 flex items-start text-white">
+			<a class="text-white" href="/">
+				<h3 class="text-2xl font-bold tracking-wider text-green-400">Musify</h3>
 			</a>
 		</div>
-		<div class="navigators">
+		<div class="mt-8 flex flex-col items-start justify-between">
 			<Navigator url="/" heading="Company" list={['About', 'Jobs', 'For The Record']} />
 			<Navigator
 				url="/"
@@ -18,50 +18,17 @@
 			/>
 			<Navigator url="/" heading="Useful Links" list={['Support', 'Web Player', 'Mobile App']} />
 		</div>
-		<div class="visit-my-github-and-others">
-			<div class="link">
-				<a rel="noreferrer" href="https://github.com/mystique09/mystique09">
+		<div class="flex flex-row h-24 items-end text-xs">
+			<div class="text-white mr-4">
+				<a rel="noreferrer" href="https://github.com/mystique09">
 					<span>Github</span>
 				</a>
 			</div>
-			<div class="link">
-				<a rel="noreferrer" href="https://linkedin.com/benjiebengarcia">
+			<div class="text-white mr-4">
+				<a rel="noreferrer" href="https://www.linkedin.com/in/benjie-ben-garcia-916261202">
 					<span>LinkedIn</span>
-				</a>
-			</div>
-			<div class="link">
-				<a rel="noreferrer" href="https://facebook.com/benjiebengarcia">
-					<span>Facebook</span>
 				</a>
 			</div>
 		</div>
 	</div>
 </footer>
-
-<style>
-	footer {
-		@apply bg-black;
-	}
-	.container {
-		@apply px-4 py-6 flex flex-col justify-between;
-	}
-	.branding-logo {
-		@apply mt-4 flex items-start text-white;
-	}
-	.branding-logo a {
-		text-decoration: none;
-		@apply text-white;
-	}
-	.branding-logo h3 {
-		@apply text-xl font-bold;
-	}
-	.navigators {
-		@apply mt-8 flex flex-col items-start justify-between;
-	}
-	.visit-my-github-and-others {
-		@apply flex flex-row h-24 items-end;
-	}
-	.link {
-		@apply text-white mr-4;
-	}
-</style>
