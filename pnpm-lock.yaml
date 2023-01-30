@@ -11,6 +11,7 @@ specifiers:
   eslint: ^7.32.0
   eslint-config-prettier: ^8.6.0
   eslint-plugin-svelte3: ^3.4.1
+  pocketbase: ^0.10.1
   postcss: ^8.4.21
   postcss-load-config: ^3.1.4
   prettier: ^2.8.3
@@ -34,6 +35,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.6.0_eslint@7.32.0
   eslint-plugin-svelte3: 3.4.1_ky47wof2jags4esujrawigm3eq
+  pocketbase: 0.10.1
   postcss: 8.4.21
   postcss-load-config: 3.1.4_postcss@8.4.21
   prettier: 2.8.3
@@ -1533,6 +1535,10 @@ packages:
   /pify/2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /pocketbase/0.10.1:
+    resolution: {integrity: sha512-FMBhF+9o2AmdKJYbfz2qunnk4Q5/efYMRcukdQF49UfhsIuaSYl39fSPN1l880bYI4XAvDDeySAjK1MlxrK37A==}
     dev: true
 
   /postcss-import/14.1.0_postcss@8.4.21:
